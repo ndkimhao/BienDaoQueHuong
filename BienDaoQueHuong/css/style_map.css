@@ -1,0 +1,86 @@
+body {
+	background: url(../image/map_background.jpg);
+}
+
+#canvasGame{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#movingTo {
+	position: absolute;
+}
+
+#divNav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	border: solid;
+	border-width: 2px;
+	border-color: #FF1493;
+	overflow: hidden;
+	height: 179px;
+	background: url(../image/tranparent.png);
+	border-bottom-right-radius: 140px;
+	z-index: 1000;
+}
+	#divNav span.gold:after {
+		content: url(../image/gold.png);
+		position: relative;
+		top: -5px;
+	}
+	#divNav span {
+		color: #000000;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	#divNav #divGoldWeather span {
+		position: relative;
+		top: -20px;
+		color: #7CFC00;
+	}
+	#divNav #divGoldWeather span.gold {
+		color: #FFD700;
+		font-size: 50px;
+	}
+#divSmallMap {
+	float: left;
+	opacity: 0.85;
+}
+#divGoldWeather {
+	float: right;
+}
+#btnRestart {
+	position: relative;
+	left: -80px;
+}
+.hide {
+	display: none;
+}
+.otherShip {
+	position: absolute;
+	z-index: -1;
+}
+span.otherShip {
+	font: Times New Roman;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFFF00;
+	width: 200px;
+	text-align: center;
+}
+
+#btnLogout {
+	position: relative;
+	top: -45px;
+}
+
+.ui-dialog p img {
+	width: 40%;
+	float: right;
+	margin-left: 10px;
+}
+.ui-dialog p {
+	text-align: justify;
+}

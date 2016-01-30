@@ -1,0 +1,115 @@
+#content {
+	width: 900px;
+	font: "Times New Roman", Arial, Verdana;
+	text-shadow: none;
+}
+#content:after {
+	transform: rotate(0.6deg);
+}
+#content:before {
+	transform: rotate(-0.8deg);
+}
+	#content #divRank {
+		text-align: left;
+		position: relative;
+		top: -20px;
+	}
+	#content #divRank ul {
+		list-style-image: url(../image/list.png);
+		position: relative;
+		left: 50px;
+		margin-left: 50px;
+	}
+	#content #divRank ul li a {
+		font-weight: bold;
+		font-size: 14px;
+	}
+	#content a {
+		float: none !important;
+	}
+	#content h1:before,
+	#content h1:after {
+		top: 15px;
+	}
+
+.clear {
+	clear: both;
+	display: block;
+	position: relative;
+	left: 30px;
+}
+
+.li1{
+	color: #FF0000;
+	font-weight: bold;
+	font-size:20px;
+}
+	.li1:before {
+		content: url(../image/list1.png);
+		padding-right: 10px;
+		position: relative;
+		top: 7px;
+	}
+
+.li2 {
+	font-size: 16px;
+	color: #B22222;
+}
+
+.left1 {
+	float: left;
+    padding-left: 50px;
+    width: 500px;
+	font-size: 16px;
+}
+
+.law {
+	font-weight: bold;
+	color: #0000FF;
+}
+.law1 {
+	color: #006400;
+}
+.law1 a {
+	font-size: inherit !important;
+	margin: 0px !important;
+}
+
+.anchor {
+	text-decoration: none !important;
+}
+
+/*.CSSTableGenerator {
+	margin-top: 10px;
+}*/
+.CSSTableGenerator td{
+	height: 24px;
+}
+
+h3 {
+	margin: 0px;
+	margin-bottom: 4px;
+	margin-top: 10px;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
+}
+
+.separator {
+	position: relative;
+	top: 22px;
+	margin-bottom: 20px;
+}
+
+.rate:after {
+	content: " %"
+}
+.gold:after {
+	content: url(../../image/gold.png);
+	position: relative;
+	top: 5px;
+}
+
+.full {
+	width: 60%;
+	margin-left: 175px;
+}

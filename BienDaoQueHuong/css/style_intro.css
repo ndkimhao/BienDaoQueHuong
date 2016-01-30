@@ -1,0 +1,89 @@
+#content {
+	width: 900px;
+	font: "Times New Roman", Arial, Verdana;
+}
+#content:after {
+	transform: rotate(0.3deg);
+}
+#content:before {
+	transform: rotate(-0.5deg);
+}
+	#content #divIntro {
+		text-align: left;
+		position: relative;
+		top: -20px;
+	}
+	#content #divIntro ul {
+		list-style-image: url(../image/list.png);
+		position: relative;
+		left: 50px;
+		margin-left: 50px;
+	}
+	#content #divIntro ul li a {
+		font-weight: bold;
+		font-size: 14px;
+	}
+	#content a {
+		float: none !important;
+	}
+	#content h1:before,
+	#content h1:after {
+		top: 15px;
+	}
+
+.clear {
+	clear: both;
+	display: block;
+	position: relative;
+	left: 30px;
+}
+
+.li1{
+	color: #FF0000;
+	font-weight: bold;
+	font-size:20px;
+}
+	.li1:before {
+		content: url(../image/list1.png);
+		padding-right: 10px;
+		position: relative;
+		top: 7px;
+	}
+
+.li2 {
+	font-size: 16px;
+	color: #B22222;
+}
+
+.left {
+	float: left;
+}
+.left1 {
+	float: left;
+    padding-left: 50px;
+    width: 500px;
+	font-size: 16px;
+}
+.right {
+	float: right;
+}
+.law {
+	font-weight: bold;
+	color: #0000FF;
+}
+.law1 {
+	color: #006400;
+}
+.law1 a {
+	font-size: inherit !important;
+	margin: 0px !important;
+}
+
+.anchor {
+	text-decoration: none !important;
+}
+
+.islandName {
+	color: #FF0000;
+	font-weight: bold;
+}

@@ -1,0 +1,40 @@
+#content {
+	width: 900px;
+	font: "Times New Roman", Arial, Verdana;
+	text-shadow: none;
+}
+
+.CSSTableGenerator {
+	width: 100%;
+	position: relative;
+	top: -20px;
+}
+
+.anchor {
+	text-decoration: none !important;
+}
+
+#intro {
+	position: relative;
+	top: -27px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#intro a {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#content {
+	text-align: left;
+}
+
+.anchor h1,
+.button {
+	text-align: center;
+}
+
+#content h1:before, #content h1:after {
+    top: 13px;
+}

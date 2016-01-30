@@ -1,0 +1,17 @@
+#txtConfirmPassword { background-position: 10px -53px !important }
+#txtEmail {
+	background-image: url(../image/register_email_icon.png) !important;
+	background-position: 12px 10px !important;
+}
+#txtCharacterName {
+	background-image: url(../image/register_character_name_icon.png) !important;
+	background-position: 13px 10px !important;
+}
+
+#btnPreviousAvatar, #btnNextAvatar {
+	cursor: pointer;
+}
+
+#divAvatar {
+	margin-top: 10px;
+}

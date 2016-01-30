@@ -1,0 +1,30 @@
+#menu ul span {
+	left: 555px;
+}
+#menu ul span:before {
+	content: url(../image/flag.png);
+	position: relative;
+	top: 5px;
+}
+
+#divNotPlaying, #divFlagWrapper div {
+    left: 15px;
+    overflow: hidden;
+    position: relative;
+    top: -10px;
+    width: 1000px;
+    z-index: -1;
+}
+
+#divFlagWrapper div {
+	left: 300px;
+	top: -2px;
+}
+
+input[type="button"] {
+	position: relative;
+	left: 585px;
+	top: -140px;
+	float: none;
+	z-index: 10;
+}

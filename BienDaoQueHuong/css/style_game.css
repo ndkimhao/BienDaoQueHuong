@@ -1,0 +1,798 @@
+/*-------------------------RESET--------------------------*/
+div, ol, ul, li {
+		border: 0;
+		outline: 0;
+		font-size: 100 % ;
+		vertical-align: baseline;
+		background: transparent;
+		margin: 0;
+		padding: 0;
+}
+body {
+	line-height: 1;
+	font-family: Arial,
+	sans-serif;
+	background: url(../image/game_background.png);
+	background-size: cover;
+}
+ol, ul {
+	list-style: none;
+}
+/*-------------------------RESET--------------------------*/
+
+/*--------------------------GRID--------------------------*/
+.col {float:left;margin:0 0 10px;}
+.col.w1 {width:10%;}
+.col.w2 {width:20%;}
+.col.w3 {width:30%;}
+.col.w4 {width:40%;}
+.col.w5 {width:50%;}
+.col.w6 {width:60%;}
+.col.w7 {width:70%;}
+.col.w8 {width:80%;}
+.col.w9 {width:90%;}
+.col.w10 {width:100%;}
+.col.bottomlast {margin:0;}
+/*--------------------------GRID--------------------------*/
+
+/*--------------------------BODY--------------------------*/
+.header {
+margin:0px;
+margin-bottom: 10px;
+padding:5px;
+font-weight: bold;
+}
+/*--------------------------BODY--------------------------*/
+
+/*--------------------------MENU--------------------------*/
+#menu {
+width:100%;
+height:35px;
+background:#d0d0d0 url(../image/game_menu.png) repeat-x;
+position:relative;
+/*border-bottom:1px solid #767778;*/
+}
+
+#menu #left,#menu #right {
+width:10px;
+height:10px;
+position:absolute;
+top:0px;
+font-size:0px;
+}
+
+#menu #left {
+left:0px;
+background:#d0d0d0 url(../image/game_menu_tl.png) no-repeat;
+}
+
+#menu #right {
+right:0px;
+background:#d0d0d0 url(../image/game_menu_tr.png) no-repeat;
+}
+
+#submenu {
+width:100%;
+height:49px;
+background:#9c9d9e url(../image/submenu.png) repeat-x;
+position:relative;
+}
+
+#menu ul {
+position:absolute;
+top:0;
+left:0;
+margin:0;
+}
+
+#menu ul li, #menu ul span {
+position:relative;
+
+font-family:Arial, sans-serif;
+font-size:12px;
+height:36px;
+color:#666;
+text-decoration:none;
+font-weight:700;
+padding:0 15px;
+
+display:block;
+float:left;
+cursor:pointer;
+margin:8px 0 0;
+}
+
+#menu ul span {
+cursor: default;
+font-size: 20px;
+left: 100px;
+top: -5px;
+padding: 0px;
+padding-left: 5px;
+color: #DAA520;
+}
+#menu ul span:after {
+content: url(../image/gold.png);
+position: relative;
+top: 3px;
+}
+
+#menu ul li:hover,#menu ul li.hover,#menu ul li.selected {background:url(../image/game_menu_arrow.png) no-repeat center 20px;}
+
+#menu h2 {padding:10px 0 0 10px;}
+/*--------------------------MENU--------------------------*/
+
+/*-------------------------SHELF-------------------------*/
+.shelf {
+/*height:165px;*/
+height:220px;
+background:url(../image/shelf_center.png) repeat-x bottom left;
+position:relative;
+margin:0 0 20px 0;
+}
+
+.shelf .left {
+width:62px;
+height:54px;
+position:absolute;
+left:0px;
+bottom:0px;
+background:url(../image/shelf_left.png) no-repeat top left;
+}
+
+.shelf .right {
+width:62px;
+height:54px;
+position:absolute;
+right:0px;
+bottom:0px;
+background:url(../image/shelf_right.png) no-repeat top left;
+}
+
+.shelf .inside {
+position:relative;
+top:-10px;
+padding:0 62px;
+/*height:123px;
+overflow:hidden;*/
+height:164px;
+}
+
+.shelf a {
+display:block;
+height:190px;
+position:relative;
+text-align:center;
+text-decoration:none;
+color: #000000;
+}
+
+.shelf a span {
+	font-weight:bold;
+}
+.shelf a span:after {
+	content: url(../image/gold.png);
+	position: relative;
+	top: 3px;
+}
+
+.shelf a img {
+position:absolute;
+bottom:0px;
+left:50%;
+margin-left:-69px;
+display:block;
+}
+/*-------------------------SHELF-------------------------*/
+
+/*-------------------------OTHERS-------------------------*/
+.clear,br {clear:both;font-size:0px;display:block;}
+.hide {
+	display: none;
+}
+.timer {
+	font-size: 1.8em;
+	color: #FF0000;
+}
+.wreck {
+	font-size: 1.8em;
+	color: #3CB371;
+	display: none;
+	position: relative;
+	left: 445px;
+}
+.answer {
+	font-weight: normal;
+	margin-left: 50px;
+}
+	.answer img {
+		height: 12px;
+		width: 12px;
+		padding-left: 5px;
+	}
+#content {
+	text-align: left;
+}
+.intro:before {
+	content: "Cách chơi:";
+	margin:0px;
+	padding:5px;
+	font-weight: bold;
+	display: block;
+}
+.intro {
+	margin-bottom: 20px;
+}
+input[value='Bắt Đầu'] {
+	float: none;
+}
+
+#divFail img,
+#divSuccess img,
+#divNotPlaying img,
+#divBankruptcy img,
+#divRestartSuccess img {
+	position: relative;
+	left: 280px;
+}
+#divSuccess img {
+	top: -65px;
+}
+#divBankruptcy img {
+	top: -60px;
+	left: 310px;
+}
+	#divBankruptcy input[type="button"] {
+		float: none;
+		position: relative;
+		top: -240px;
+	}
+#divRestartSuccess img {
+	top: -35px;
+}
+
+#divTableInvestment {
+	float: left;
+}
+#divTableTopIsland {
+	float: right;
+}
+.rate:after {
+	content: " %"
+}
+.gold:after {
+	content: url(../../image/gold.png);
+	position: relative;
+	top: 5px;
+}
+.CSSTableGenerator td{
+	height: 24px;
+}
+.investment:before {
+	content: "Bạn đã đầu tư: "
+}
+#divInvestment #txtInvestment {
+	background: url("../image/gold.png") no-repeat -5px center #EAE7E7;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-top: 15px;
+    width: 60px;
+	position: relative;
+	left: -68px;
+}
+#divInvestment #btnInvestment {
+    left: 150px;
+    top: 26px;
+}
+#divInvestment #spanInvestment {
+	position: relative;
+    left: -200px;
+    top: -10px;
+	font-weight: bold;
+}
+#divInvestment input {
+	top: 30px;
+}
+/*-------------------------OTHERS-------------------------*/
+
+/*----------------------PUZZLE GAME-----------------------*/
+#divWrapperPuzzleGame {
+	width: 800px;
+	height: 800px;
+	border: solid;
+	border-width: 2px;
+	border-color: #C0C0C0;
+}
+#divStep1Puzzle {
+    height: 600px;
+    overflow: hidden;
+}
+#divStep1Puzzle img {
+	position: relative;
+	left: 225px;
+	top: 20px;
+}
+#divStep1Puzzle input[type="button"] {
+	float: none;
+	position: relative;
+	left: -300px;
+	top: -150px;
+}
+#imgPuzzleGame {
+	background: url("../image/game/puzzle/background.png");
+}
+/*----------------------PUZZLE GAME-----------------------*/
+
+/*----------------------MEMORY GAME-----------------------*/
+#divStep1Memory img {
+	position: relative;
+	left: 225px;
+	top: 25px;
+}
+#divStep1Memory input[type="button"] {
+	float: none;
+	position: relative;
+	left: -300px;
+	top: -150px;
+}
+
+/* Page layout styles */
+.gallery, .album {
+    /*background-color:#fff;*/
+    font:14px/1.3 Arial,sans-serif;
+}
+
+/* Photo Gallery styles */
+.gallery {
+    margin: 50px auto 0;
+    width: 840px;
+}
+.gallery a {
+    display: inline-block;
+    height: 135px;
+    margin: 10px;
+    opacity: 1;
+    position: relative;
+    width: 180px;
+
+    -khtml-user-drag: element;
+
+    /* CSS3 Prevent selections */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    /* CSS3 transition rules */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.gallery a img {
+    border: 8px solid #fff;
+    border-bottom: 20px solid #fff;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+
+    /* CSS3 Box sizing property */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* CSS3 transition rules */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    /* CSS3 Box Shadow */
+    -moz-box-shadow: 2px 2px 4px #444;
+    -webkit-box-shadow: 2px 2px 4px #444;
+    -o-box-shadow: 2px 2px 4px #444;
+    box-shadow: 2px 2px 4px #444;
+}
+
+/* Custom CSS3 rotate transformation */
+.gallery a:nth-child(1) img {
+    -moz-transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+}
+.gallery a:nth-child(2) img {
+    -moz-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.gallery a:nth-child(3) img {
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+.gallery a:nth-child(4) img {
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+.gallery a:nth-child(5) img {
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+.gallery a:nth-child(6) img {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.gallery a:nth-child(7) img {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+.gallery a:nth-child(8) img {
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+.gallery a:nth-child(9) img {
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+.gallery a:nth-child(10) img {
+    -moz-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+.gallery a:nth-child(11) img {
+    -moz-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
+.gallery a:nth-child(12) img {
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.gallery a:nth-child(13) img {
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+.gallery a:nth-child(14) img {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.gallery a:nth-child(15) img {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+.gallery a:nth-child(16) img {
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+.gallery a:hover img {
+    z-index: 5;
+
+    /* CSS3 transition rules */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    /* CSS3 transform rules */
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.gallery a.hidden {
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    width: 0;
+}
+.albums {
+    margin: 40px auto 0;
+    overflow: hidden;
+    width: 840px;
+}
+.album {
+    border: 3px dashed #ccc;
+    float: left;
+    margin: 10px;
+    min-height: 100px;
+    padding: 10px;
+    width: 220px;
+
+    /* CSS3 transition rules */
+    -webkit-transition: all 1.0s ease;
+    -moz-transition: all 1.0s ease;
+    -o-transition: all 1.0s ease;
+    transition: all 1.0s ease;
+}
+.album a {
+    display: inline-block;
+    height: 56px;
+    margin: 15px;
+    opacity: 1;
+    position: relative;
+    width: 75px;
+
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+
+    /* CSS3 Prevent selections */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    /* CSS3 transition rules */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.album a img {
+    border: 4px solid #fff;
+    border-bottom: 10px solid #fff;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+
+    /* CSS3 Box sizing property */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* CSS3 transition rules */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    /* CSS3 Box Shadow */
+    -moz-box-shadow: 2px 2px 4px #444;
+    -webkit-box-shadow: 2px 2px 4px #444;
+    -o-box-shadow: 2px 2px 4px #444;
+    box-shadow: 2px 2px 4px #444;
+}
+/*----------------------MEMORY GAME-----------------------*/
+
+/*---------------------FISHING GAME-----------------------*/
+@font-face {
+    font-family:'PlugNickel';
+    src: url('../media/fonts/Plug-NickelBlack-webfont.eot');
+    src: url('../media/fonts/Plug-NickelBlack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../media/fonts/Plug-NickelBlack-webfont.woff') format('woff'),
+         url('../media/fonts/Plug-NickelBlack-webfont.ttf') format('truetype'),
+         url('../media/fonts/Plug-NickelBlack-webfont.svg#PlugNickel') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+/* Main styles
+----------------------------------- */
+#divStep1Fishing {
+	position: relative;
+	left: 350px;
+    overflow: hidden;
+    width: 690px;
+	text-align: center;
+	font-size: 20px;
+	color: #0000FF;
+}
+	#divStep1Fishing img {
+		border-radius: 50px;
+	}
+
+/* General styles
+----------------------------------- */
+#divFishingPlay {
+	background:url("../image/game/fishing/background.jpg") no-repeat;
+	border:1px solid #000;
+	position:relative;
+}
+	#divFishingPlay, #divFishingPlay .fishing-view {
+		height:768px;
+		width:1024px;
+	}
+	#divFishingPlay .fishing-view {
+		left:0;
+		position:absolute;
+		top:0;
+	}
+#divFishingPlay button {
+	background:url("../image/game/fishing/buttons.png") no-repeat;
+	border:none;
+	cursor:pointer;
+	display:block;
+	height:48px;
+	overflow:hidden;
+	position:absolute;
+	text-indent:-500px;
+	width:160px;
+}
+	#divFishingPlay button:hover {
+		background-position:0 -48px;
+	}
+
+/* ALL Screens
+----------------------------------- */
+#divFishingPlay .fishing-game-score {
+	background:url('../image/game/fishing/sprites.png') no-repeat -448px -58px;
+	display:block;
+	font:bold 20px/34px "PlugNickel", Arial, Helvetica, sans-serif;
+	height:38px;
+	left:20px;
+	padding:0 0 0 38px;
+	position:absolute;
+	/*
+    top:16px;
+    */
+    top:172px;
+	width:200px;
+}
+#divFishingPlay .fishing-game-net {
+	background:url('../image/game/fishing/sprites.png') no-repeat;
+	display:block;
+	position:absolute;
+}
+
+/* INTRO Screen
+----------------------------------- */
+#divFishingPlay .fishing-intro {
+	background:url("../image/game/fishing/intro.png") no-repeat center 131px;
+	text-align:center;
+}
+	#divFishingPlay .fishing-intro button {
+		left:432px;
+		top:668px;
+	}
+
+/* GAME Screen
+----------------------------------- */
+#divFishingPlay .fishing-game {
+
+}
+	#divFishingPlay .fishing-game .fishing-game-message {
+		color:#fff;
+		font:bold 44px/1em "PlugNickel", Arial, Helvetica, sans-serif;
+		left:0;
+		position:absolute;
+		text-align:center;
+		text-shadow:rgba(0,0,0,0.3) 2px 3px 1px;
+		top:300px;
+		width:100%;
+	}
+
+/* ASSETS
+----------------------------------- */
+#divFishingPlay #divFishingPlay-sound {
+	position:absolute;
+	right:0;
+	top:0;
+}
+/*---------------------FISHING GAME-----------------------*/
+
+/*-------------------FLIP IMAGE GAME----------------------*/
+#divStep1FlipImage img {
+	position: relative;
+	left: -20px;
+}
+#divStep1FlipImage input[type="button"] {
+	position: relative;
+	left: 500px;
+	top: 330px;
+}
+
+#divFlipImagePlay {
+	line-height: 0px;
+	width: 480px;
+	height: 480px;
+	border: solid;
+	border-width: 2px;
+	background: url(../image/game/flipImage/background.jpg);
+	background-size: cover;
+}
+	#divFlipImagePlay span img {
+		width: 120px;
+		height: 120px;
+		cursor: pointer;
+	}
+	#divFlipImagePlay span img.opened,
+	#divFlipImagePlay span img.disappear {
+		cursor: default;
+	}
+/*-------------------FLIP IMAGE GAME----------------------*/
+
+/*----------------------SORT GAME-------------------------*/
+.sortable1, .sortable2 {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+	left: 4px;
+}
+.sortable1 li,
+.sortable2 li {
+	margin: 0px 5px 5px 5px;
+	padding: 5px;
+	font-weight: bold;
+	width: 260px;
+	cursor: default;
+}
+#divDoSort .sortable1 li,
+#divDoSort .sortable2 li {
+	cursor: n-resize;
+}
+
+#divStep1Sort {
+	overflow: hidden;
+	height: 500px;
+}
+	#divStep1Sort input[type="button"] {
+		float: none;
+		position: relative;
+		left: -245px;
+		top: -165px;
+	}
+	#divStep1Sort img {
+		position: relative;
+		left: 260px;
+		top: -12px;
+	}
+#divRememberSort #content {
+	width: 624px;
+}
+#divDoSort #content {
+	width: 654px;
+}
+#divDoSort span.ui-icon.ui-icon-arrowthick-2-n-s {
+	position: absolute;
+	margin-left: -18px;
+	margin-top: -1px;
+}
+#divDoSort li {
+	padding-left: 20px;
+}
+.ui-state-highlight {
+	height: 16px;
+}
+/*----------------------SORT GAME-------------------------*/
+
+/*-------------------SHIPWRACK GAME-----------------------*/
+#divStep1Shipwreck img {
+	position: relative;
+	top: -18px;
+	left: 55px;
+}
+#divStep1Shipwreck input[type="button"] {
+	position: relative;
+	top: 300px;
+	left: 550px;
+}
+/*-------------------SHIPWRACK GAME-----------------------*/

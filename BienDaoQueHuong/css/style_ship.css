@@ -1,0 +1,76 @@
+#menu ul span {
+	left: 380px;
+}
+
+#menu ul a {
+	width: 65px;
+	position: absolute;
+	top: 9px;
+	left: 1258px;
+}
+
+#divNotPlaying {
+    left: 60px;
+    overflow: hidden;
+    position: relative;
+    top: -35px;
+    width: 900px;
+	z-index: -1;
+}
+
+#spanSaleGold {
+	color: #FFD700;
+}
+
+#spanSaleGold:after {
+	content: url(../image/gold.png);
+	position: relative;
+	top: 3px;
+}
+
+#divShelf1 .inside .books div {
+	position: relative;
+	left: 50px;
+}
+
+#divShelf2 .inside .books div {
+	position: relative;
+	left: 22px;
+}
+
+#divShelf3 .inside .books div {
+	position: relative;
+	left: -46px;
+}
+
+.shelf a span.speed:before {
+	content: "- Tốc độ: ";
+}
+.shelf a span.speed {
+	color: #32CD32;
+}
+.shelf a span:not(.gold):after {
+	content: none;
+	top: 0px;
+}
+.shelf a span.gold:after {
+	left: -6px;
+}
+.shelf a span.gold {
+	color: #FFD700;
+}
+
+#divShelf1 .inside .books span {
+	position: relative;
+	left: 40px;
+}
+
+#divShelf2 .inside .books span {
+	position: relative;
+	left: 60px;
+}
+
+#divShelf3 .inside .books span {
+	position: relative;
+	left: 80px;
+}
